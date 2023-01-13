@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+}
+
+/*Scroll bar*/
+html::-webkit-scrollbar {
+    width: 0.5vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #E0AA3E;
+}
+html::-webkit-scrollbar-track{
+    background-color: #000000;
+}
+/* -Scroll bar -*/
+
+/* Image slider */
+
+#teams-card-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slider-images{
+    width: 100px;
+    height: 500px;
+    object-fit: contain;
+}
+
+#image-slider{
+    /*background-color: #9a60d0;*/
+    height: 500px;
+    width: 100%;
+    padding-top: 5%;
+}
+
+/* -Image slider- */
+
+#register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Card */
+.card-container {
+    width: 200px;
+    margin: 1%;
+    border: 1px solid #E0AA3E;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading{
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-text{
+    font-weight: 400;
+    text-align: center;
+    flex: 0.8;
+}
+
+/* --Card-- */
+
+
+body{
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+}
+#title-logo{
+    margin-top: -100px;
+    height: 500px;
+}
+#navigationbar{
+    background-color: #000000;
+    padding: 0 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+#about-the-teams{
+    font-family: 'Ubuntu',sans-serif!important;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /*background-color: aquamarine;*/
+    width: 100%;
+    height: auto;
+}
+#more-about-uttunga{
+    padding: 5% 8%;
+    /*background-color: teal;*/
+    height: auto;
+    width: 100%;
+}
+
+.mont{
+    width: 80%;
+    margin: 5% 15%;
+}
+.title-container{
+    padding-top: 100px;
+    display: flex;
+}
+.title-text{
+    flex: 1.5;
+}
+.title-img{
+    flex: 0.5;
+    /*background-color: #3b84c1;*/
+}
+h1 {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.about{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+    margin: 5% 15%;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-link{
+    font-family: 'Montserrat-light' , sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.nav-item {
+    padding: 0 18px;
+}
+
+@media (max-width: 991px) {
+
+    #process img{
+        width: 80%;
+    }
+    #student-committee{
+        flex-direction: column!important;
+
+    }
+    .student-container{
+        padding: 10%;
+        padding-bottom: 0;
+    }
+
+    .title-container{
+        padding-top: 20%;
+        flex-direction: column-reverse;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .mont{
+        width: auto;
+    }
+    .about{
+        width: auto;
+    }
+    #container{
+        padding: 5% 10%;
+        text-align: center;
+    }
+    .student-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr!important;
+    }
+    .slider-images{
+        height: 400px;
+        object-fit: contain;
+    }
+    .heads-list-heading{
+        padding-top: 2%;
+    }
+}
+.qr-code{
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: #47B5FF;
+}
+/*footer*/
+#footer{
+    text-align: center;
+}
+.fo{
+    color: #E0AA3E;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.gold-headings{
+    color: #E0AA3E;
+}
+.white-sub-headings{
+    color: #fff;
+}
+
+#register-btn{
+    font-weight: 700;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #E0AA3E;
+    color: #fff;
+}
+
+#register-btn:hover{
+    background-color: #333333;
+    color: #E0AA3E!important;
+}
+
+/* Student Committee */
+#student-committee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-rows{
+}
+
+.student-grid{
+    padding: 5%;
+    display: grid;
+    column-gap: 2%;
+    row-gap: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.heads-list{
+    display: flex;
+}
+.names{
+    flex: 1
+}
+.position{
+    flex: 1.75;
+}
+/*.grid-item{*/
+
+/*}*/
+.grid-heading{
+    /*column-span: 5;*/
+    grid-column: span 5;
+}
+.heads-list-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* - Student Committee -*/
+
+#register h3:hover, #register a:hover{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #E0AA3E;
+    margin-right: 1%;
+}
